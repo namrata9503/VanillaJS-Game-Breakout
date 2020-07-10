@@ -1,25 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Monoton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 * {
     box-sizing: border-box;
   }
   
   body {
-    background-color: #0095dd;
+    background-color: #0b4866;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Handlee', cursive;
+
     min-height: 100vh;
     margin: 0;
   }
   
   h1 {
-    font-size: 45px;
+    font-size: 50px;
+    font-family: 'Bangers', cursive;
+        font-weight: normal;
     color: #fff;
+    letter-spacing: 5px;
   }
   
   canvas {
-    background: #f0f0f0;
+    background: whitesmoke;
     display: block;
     border-radius: 5px;
   }
@@ -28,9 +36,13 @@
     cursor: pointer;
     border: 0;
     padding: 10px 20px;
-    background: #000;
+    background: rgb(51, 36, 36);
     color: #fff;
     border-radius: 5px;
+    font-family: 'Handlee', cursive;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
   }
   
   .btn:focus {
@@ -63,6 +75,16 @@
     line-height: 1.5;
     transform: translateX(-400px);
     transition: transform 1s ease-in-out;
+  }
+  .rules h2{
+      border-bottom: 1px solid #fff;
+      font-weight: bolder;
+      font-size: 2rem;
+  }
+  .rules p{
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      margin-bottom: 2rem;
   }
   
   .rules.show {
